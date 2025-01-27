@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tết Nguyên Đán 2025</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            background-color: #d32f2f; /* Màu đỏ cho năm 2025 */
+        }
+
+        header {
+            background-color: #b71c1c;
+            color: white;
+            padding: 20px 0;
+            font-size: 3em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .lantern {
+            font-size: 120px;
+            color: #ffeb3b;
+            margin: 20px;
+            animation: blink 1s infinite;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fbc02d;
+            border-radius: 5px;
+            width: 60%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #ff5722;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d64f36;
+        }
+
+        footer {
+            background-color: #b71c1c;
+            color: white;
+            padding: 20px;
+            font-size: 1.2em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .hint {
+            font-size: 1.2em;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .snake {
+            font-size: 150px;
+            color: #4caf50;
+            margin: 20px 0;
+        }
+
+        .tet-icons {
+            font-size: 100px;
+            margin: 20px;
+        }
+
+        .tet-icons i {
+            margin: 10px;
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        Tết Nguyên Đán 2025
+    </header>
+
+    <div class="content">
+        <div class="lantern">🏮 🏮 🏮</div>
+        <div class="snake">🐍</div>
+        <p class="message">Chúc em và gia đình một năm mới an khang thịnh vượng, vạn sự như ý!</p>
+        
+        <!-- Thêm hình ảnh từ Google Drive -->
+        <div class="image-container">
+<img src="https://drive.google.com/uc?id=1BzWrDzFyLB1sJw5aY-ou4KxyS2WlGk4E" alt="Minh họa Tết Nguyên Đán">
+        </div>
+        
+        <button onclick="showMessage()">Chúc mừng năm mới!</button>
+        <p id="luckyMessage"></p>
+
+        <!-- Gợi ý để bấm vào xem lời chúc -->
+        <div class="hint">Bấm vào nút trên để xem các lời chúc may mắn 🎉</div>
+
+        <!-- Các icon Tết -->
+        <div class="tet-icons">
+            <i class="fas fa-fire"></i> <!-- Hiệu ứng pháo hoa -->
+            <i class="fas fa-bread-slice"></i> <!-- Bánh chưng -->
+            <i class="fas fa-bowl-rice"></i> <!-- Bánh tét -->
+        </div>
+    </div>
+
+    <footer>
+        Tết Nguyên Đán - Chúc Mừng Năm Mới 2025
+    </footer>
+
+    <!-- Thêm thư viện fireworks.js và Font Awesome -->
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/index.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script>
+        // Khởi tạo hiệu ứng pháo hoa
+        const fireworks = new Fireworks.default({
+            speed: 4,
+            acceleration: 1.05,
+            friction: 0.98,
+            gravity: 1.5,
+            particles: 100,
+            trace: 3,
+            explosion: 5,
+            boundaries: { x: 0, y: 0, width: window.innerWidth, height: window.innerHeight },
+            rocket: { width: 2, height: 10 },
+            hue: { min: 0, max: 360 },
+            opacity: { min: 0.1, max: 1 }
+        });
+
+        fireworks.start();
+
+        // Hiển thị lời chúc may mắn ngẫu nhiên
+        function showMessage() {
+            var messages = [
+                "Chúc em sức khỏe dồi dào và tài lộc phát tài!",
+                "Năm mới, may mắn luôn đồng hành cùng em!",
+                "Chúc em một năm đầy ắp niềm vui và thành công!",
+                "Vạn sự như ý, đón Tết vui vẻ bên gia đình!"
+            ];
+            var randomIndex = Math.floor(Math.random() * messages.length);
+            document.getElementById('luckyMessage').innerText = messages[randomIndex];
+        }
+    </script>
+</body>
+</html><header>
+    Tết Nguyên Đán 2025
+</header>
+
+<div class="content">
+    <div class="lantern">🏮 🏮 🏮</div>
+    <div class="snake">🐍</div>
+    <p class="message">Chúc em và gia đình một năm mới an khang thịnh vượng, vạn sự như ý!</p>
+    
+    <!-- Thêm hình ảnh từ Google Drive -->
+    <div class="image-container">
+        <img src="https://drive.google.com/uc?id=1BzWrDzFyLB1sJw5aY-ou4KxyS2WlGk4E" alt="Minh họa Tết Nguyên Đán">
+    </div>
+    
+    <button onclick="showMessage()">Chúc mừng năm mới!</button>
+    <p id="luckyMessage"></p>
+
+    <!-- Gợi ý để bấm vào xem lời chúc -->
+    <div class="hint">Bấm vào nút trên để xem các lời chúc may mắn 🎉</div>
+
+    <!-- Các icon Tết -->
+    <div class="tet-icons">
+        <i class="fas fa-fire"></i> <!-- Hiệu ứng pháo hoa -->
+        <i class="fas fa-bread-slice"></i> <!-- Bánh chưng -->
+        <i class="fas fa-bowl-rice"></i> <!-- Bánh tét -->
+    </div>
+</div>
